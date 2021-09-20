@@ -1,0 +1,80 @@
+@use "../../presets/index" as *;
+@use "../../mixins" as *;
+
+input [type="text"] {
+  color: white;
+}
+
+.form {
+  padding: 30px 0;
+  background-color: $color-primary;
+
+  &__container {
+    @extend %container;
+
+    display: grid;
+    gap: $gap;
+
+    @include md-min {
+      grid-template-columns: repeat(3, 1fr);
+      gap: $gap;
+    }
+
+    @include md-sm {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn {
+      width: 100%;
+      color: $color-light;
+      background-color: rgba($color-light, 0.1);
+      border-bottom: 2px solid rgba($color-light, 0.1);
+      transition: background-color 0.5s;
+
+      &:hover {
+        background-color: $color-accent;
+        border: 2px solid $color-light;
+      }
+    }
+  }
+}
+
+.form-item {
+  &__input {
+    background-color: rgba($color-light, 0.05);
+    border: none;
+    border-bottom: 2px solid rgba($color-light, 0.1);
+    display: block;
+    color: $color-light;
+    width: 100%;
+    height: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 1.125rem;
+    letter-spacing: 0.15em;
+    transition: background-color 0.5s, border-color 0.5s;
+
+    &::placeholder {
+      color: rgba($color-light, 0.2);
+    }
+
+    &:hover {
+      border-color: rgba($color-light, 0.15);
+      border-bottom-color: $color-light;
+      background-color: rgba($color-light, 0.15);
+    }
+
+    &:focus {
+      outline: none;
+      border-color: rgba($color-light, 0.15);
+      border-bottom-color: $color-light;
+      background-color: rgba($color-light, 0.15);
+    }
+  }
+
+  &:nth-of-type(1) {
+    @include md-sm {
+      grid-column: 1 / span 2;
+    }
+  }
+}

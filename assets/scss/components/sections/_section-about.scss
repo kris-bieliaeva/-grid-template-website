@@ -3,7 +3,7 @@
 
 .about {
   background-color: #e5e5e5;
-  letter-spacing: 0.048em;
+  letter-spacing: 0.055em;
 
   @include lg-min {
     padding-top: $gap-x5;
@@ -45,8 +45,8 @@
       grid-template-columns: 1fr;
     }
 
-    &_content {
-      letter-spacing: 0.055em;
+    &__content {
+      margin-top: 1px;
     }
 
     h2 {
@@ -97,6 +97,10 @@
     align-content: center;
     justify-items: center;
     margin-bottom: 20px;
+
+    @include md {
+      margin-bottom: 13px;
+    }
 
     img {
       max-width: 100%;

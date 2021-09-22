@@ -697,13 +697,13 @@ p {
 
 .about {
   background-color: #e5e5e5;
-  letter-spacing: 0.048em;
+  letter-spacing: 0.055em;
 }
 .about__container {
   display: grid;
 }
-.about__container_content {
-  letter-spacing: 0.055em;
+.about__container__content {
+  margin-top: 1px;
 }
 .about__container h2 {
   margin-top: 0;
@@ -1062,6 +1062,10 @@ input [type=text] {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .posts__content {
+    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 767.8px) {
   h1 {
@@ -1113,13 +1117,12 @@ input [type=text] {
     padding-top: 60px;
     padding-bottom: 45px;
   }
+  .about__img {
+    margin-bottom: 13px;
+  }
   .posts {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .posts__content {
-    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {

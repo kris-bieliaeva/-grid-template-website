@@ -28,7 +28,8 @@ input [type="text"] {
       width: 100%;
       color: $color-light;
       background-color: rgba($color-light, 0.1);
-      border-bottom: 2px solid rgba($color-light, 0.1);
+      border: 2px solid rgba($color-light, 0);
+      border-bottom-color: rgba($color-light, 0.2);
       transition: background-color 0.5s;
 
       &:hover {
@@ -42,8 +43,8 @@ input [type="text"] {
 .form-item {
   &__input {
     background-color: rgba($color-light, 0.05);
-    border: none;
-    border-bottom: 2px solid rgba($color-light, 0.1);
+    border: 2px solid rgba($color-light, 0);
+    border-bottom-color: rgba($color-light, 0.25);
     display: block;
     color: $color-light;
     width: 100%;
@@ -55,7 +56,7 @@ input [type="text"] {
     transition: background-color 0.5s, border-color 0.5s;
 
     &::placeholder {
-      color: rgba($color-light, 0.2);
+      color: #637588;
     }
 
     &:hover {

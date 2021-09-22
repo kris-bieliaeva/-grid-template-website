@@ -751,7 +751,8 @@ input [type=text] {
   width: 100%;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.2);
   -webkit-transition: background-color 0.5s;
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
@@ -763,8 +764,8 @@ input [type=text] {
 
 .form-item__input {
   background-color: rgba(255, 255, 255, 0.05);
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-bottom-color: rgba(255, 255, 255, 0.25);
   display: block;
   color: #ffffff;
   width: 100%;
@@ -778,19 +779,19 @@ input [type=text] {
   transition: background-color 0.5s, border-color 0.5s;
 }
 .form-item__input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .form-item__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .form-item__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .form-item__input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .form-item__input::placeholder {
-  color: rgba(255, 255, 255, 0.2);
+  color: #637588;
 }
 .form-item__input:hover {
   border-color: rgba(255, 255, 255, 0.15);
@@ -906,7 +907,8 @@ input [type=text] {
 }
 .footer__socials {
   display: grid;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
+  margin-left: 2px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -937,12 +939,12 @@ input [type=text] {
   color: #637588;
   font-weight: 100;
   letter-spacing: 0.33em;
-  margin-right: -7px;
+  margin-right: -8px;
 }
 .footer__caption span:nth-of-type(2) {
   font-size: 1rem;
-  color: #ffffff;
-  font-weight: 500;
+  color: #e5e5e5;
+  font-weight: 700;
   letter-spacing: 0.05em;
 }
 @media (min-width: 576px) {
@@ -990,10 +992,6 @@ input [type=text] {
   .form__container {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-  }
-  .posts__content {
-    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (min-width: 992px) {
@@ -1118,6 +1116,10 @@ input [type=text] {
   .posts {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+  .posts__content {
+    grid-template-areas: "p1 p1 p2" "p3 p4 p4" "p5 p5 p6";
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {

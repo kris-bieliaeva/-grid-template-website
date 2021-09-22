@@ -12,7 +12,8 @@
 
   &__socials {
     display: grid;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+    margin-left: 2px;
     justify-content: center;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
@@ -42,13 +43,13 @@
         color: $color-gray;
         font-weight: 100;
         letter-spacing: 0.33em;
-        margin-right: -7px;
+        margin-right: -8px;
       }
 
       &:nth-of-type(2) {
         font-size: 1rem;
-        color: $color-light;
-        font-weight: 500;
+        color: $color-gray-light;
+        font-weight: 700;
         letter-spacing: 0.05em;
       }
     }

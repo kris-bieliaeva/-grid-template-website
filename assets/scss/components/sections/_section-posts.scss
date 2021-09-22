@@ -23,6 +23,10 @@
   &__container {
     @extend %container;
 
+    @include sm {
+      margin-top: 3px;
+    }
+
     h2 {
       margin-top: 0;
     }
@@ -95,6 +99,10 @@
         overflow: hidden;
         align-content: center;
         justify-content: center;
+
+        @include md {
+          margin-bottom: 13px;
+        }
 
         img {
           min-width: 100%;

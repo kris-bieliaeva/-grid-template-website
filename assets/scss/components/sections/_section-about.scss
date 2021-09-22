@@ -102,6 +102,10 @@
       margin-bottom: 13px;
     }
 
+    @include sm {
+      margin-top: 3px;
+    }
+
     img {
       max-width: 100%;
       max-height: 480px;

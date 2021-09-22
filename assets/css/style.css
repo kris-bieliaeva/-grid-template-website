@@ -1124,6 +1124,9 @@ input [type=text] {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .posts__content .posts-item__img {
+    margin-bottom: 13px;
+  }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
   h2 {
@@ -1199,5 +1202,11 @@ input [type=text] {
   }
   .about__container p:first-of-type::after {
     display: none;
+  }
+  .about__img {
+    margin-top: 3px;
+  }
+  .posts__container {
+    margin-top: 3px;
   }
 }

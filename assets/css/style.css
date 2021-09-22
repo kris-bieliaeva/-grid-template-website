@@ -439,7 +439,7 @@ p {
   min-height: 100vh;
   padding: 150px 0;
   background-color: #2d3651;
-  background-image: url(../img/img-header.png);
+  background-image: url(../img/img-header.webp);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -1118,14 +1118,11 @@ input [type=text] {
     padding-bottom: 45px;
   }
   .about__img {
-    margin-bottom: 13px;
+    margin-bottom: 15px;
   }
   .posts {
     padding-top: 60px;
     padding-bottom: 60px;
-  }
-  .posts__content .posts-item__img {
-    margin-bottom: 13px;
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
@@ -1155,7 +1152,7 @@ input [type=text] {
     grid-column: 1/span 2;
   }
   .posts {
-    padding-top: 58px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   .posts__content {
@@ -1204,9 +1201,6 @@ input [type=text] {
     display: none;
   }
   .about__img {
-    margin-top: 3px;
-  }
-  .posts__container {
     margin-top: 3px;
   }
 }

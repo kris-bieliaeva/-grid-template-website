@@ -417,6 +417,7 @@ p {
   -o-transition: background-color 0.5s;
   transition: background-color 0.5s;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 .btn:hover, .btn:focus {
   background-color: #d66926;
@@ -827,7 +828,13 @@ input [type=text] {
   grid-template-columns: auto 1fr 1fr;
 }
 .posts__content .posts-item:hover {
-  background-color: #bfbfbf;
+  background-color: #d8d8d8;
+}
+.posts__content .posts-item:hover h3 {
+  color: #2d3651;
+}
+.posts__content .posts-item:hover p {
+  color: #2d3651;
 }
 .posts__content .posts-item:nth-of-type(1) {
   grid-area: p1;
@@ -1199,5 +1206,9 @@ input [type=text] {
   }
   .about__img {
     margin-top: 3px;
+  }
+  .posts__content {
+    grid-template-areas: "p1" "p2" "p3" "p4" "p5" "p6";
+    grid-template-columns: 1fr;
   }
 }
